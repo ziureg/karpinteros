@@ -3,16 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karpinteros</title>
+    <title>KARPINTEROS.COM</title>
     <link rel="stylesheet" href="./CSS/normalize.css" />
     <link rel="stylesheet" href="./CSS/estilosGrid.css" />
+    <link rel="stylesheet" href="./CSS/shop.css" />
+    <!-- <script type="module" src="./data/data.js"></script> -->
+    <script type="module" src="./js/shop.js"></script>
   </head>
 
   <body>
     <header class="hero">
       <nav class="nav container">
-        <div class="nav_logo">
-          <h2 class="nav_title">Karpinteros</h2>
+        <!--<div class="nav_logo">
+          <h2 class="nav_title">CODE WEB by ziuReG</h2>
+        </div>-->
+        <div class="logo_div">
+          <div class="flex_row">
+            <div class="logo_box_light"><img src="" alt="" class="" /></div>
+            <div class="logo_box_dark"><img src="" alt="" class="" /></div>
+            <div class="logo_box_light"><img src="" alt="" class="" /></div>
+            <div class="logo_box_dark"><img src="" alt="" class="" /></div>
+          </div>
+          <div class=" ">
+            <h2 class="item_title">KARPINTEROS</h2>
+          </div>
         </div>
 
         <ul class="nav_link nav_link--menu">
@@ -23,7 +37,7 @@
             <a href="#about" class="nav_links">Empresa</a>
           </li>
           <li class="nav_items">
-            <a href="#products" class="nav_links">Productos</a>
+            <a href="#shop" class="nav_links">Productos</a>
           </li>
           <!--          <li class="nav_items"> 
             <a href="#Shop" class="nav_links">Shop</a>
@@ -35,7 +49,7 @@
           <li class="nav_items">
             <a href="#costumers" class="nav_links">Clientes</a>
           </li>
--->
+                  -->
           <li class="nav_items">
             <a href="#contact" class="nav_links">Contacto</a>
           </li>
@@ -59,6 +73,20 @@
         </h1>
         <p class="hero_paragraph">
           Hacemos realidad el Diseño que se adapta a sus necesidades
+          <!-- Titulo: Carpintería Moderna: Diseños funcionales para tus espacios; Slogan: Donde la innovación se une a la practicidad. -->
+          <!-- Titulo: Espacios inteligentes: Soluciones de carpintería a tu medida. Slogan: Transformanos tus ideas en realidad fumcional-->
+          <!-- Titulo: La nueva Era de la Carpíntería: diseño y funcionalidad en armonía; Slogan: maximiza tu espacio con estilo y eficiencia. -->
+          <!-- Titulo: Carpintería Excludiva: piezas únicas para espacios singulares ; Slogan: La elegancia y distinción en cada detalle. -->
+          <!-- Titulo: Diseño de autor: Carpinteríamoderna con alma.; Slogan: Creamos piezas que cuentan tu historia . -->
+          <!-- Titulo: La galería de la madera: Obras maestras en carpintería moderna. ; Slogan: Donde elñ arte y la funcionalidad crean su propia danza. -->
+          <!-- Titulo: Tu espacio ideal: Carpintería moderna a tu medida. ; Slogan: Diseñamos contigo, creamos para tí. -->
+          <!-- Titulo: La carpintería del futuro; Personalización y experiencia Slogan: Más que muebles, creamos experiencias únicas. -->
+          <!-- Titulo: Soluciones de carpintería: Tu estilo, nuestra pasión; Slogan: Hacemos realidad tus proyectos con dedicación y excelencia. -->
+          <!-- Recomendaciones: -->
+          <!-- Conoce tu público: adapta el lenguaje y el tono a tu audiencia. -->
+          <!-- Destaca tus diferenciadores: ¿Que hace única tu carpintería? Enfatízalo en tu mensaje -->
+          <!-- Utiliza palabras clave: Incluye términos relevantes para SEO, como "carpintería moderna", "diseño a medida", "muebles funcionales", etc -->
+          <!-- Crea una identidad visual: El titulo y el slogan deben ir acompañados de un diseño atractivo y coherente con tu marca -->
         </p>
         <a href="#contact" class="cta">Contactanos</a>
       </section>
@@ -99,638 +127,107 @@
         </div>
       </section>
 
-      <!-- >>>>>>>>>> Exposición de Productos y Venta <<<<<<<<<<< -->
-      <section
-        class="block_products block_container_color block_paragraph"
-        id="products"
-      >
-              <div class="">
-
-        <h2 class="block_title">Nuestros Productos</h2>
-        <!--<div class="productLine_container"> -->
-         <!-- <h2>Products</h2>
-          -->
+      <!-- >>>>>>> new BLOCK Shop <<<<<<<< -->
+      <section class="shopContainer" id="shop">
+        <div class="shop_title">
+          <h2 class="block_title">Carpintería Moderna</h2>
           <p class="block_desc">
-            Un seleccionado stock de productos de excelente calidad
+            Diseños funcionales para tu hogar, maximiza tu espacio con estilo y
+            eficiencia
           </p>
         </div>
-        <div class="product_container ">
-          
-          <img
-            src="./images/arrow_left.svg"
-            alt="imgen_arrow_Left"
-            class="scroll_arrow"
-            id="product_before"
-          />
-
-          <div class="block_grid product_body product_body--show" data-id="1">
-            <!-- slider items  -->
-            <div class="product_descrptions">
-              <!--expo Kitchen items -->
-              <div class="product_texts">
-                <h2 class="title">
-                  Cocina lineal<spam class="subtitle">, Frontera</spam>
+        <div class="productsContainer">
+          <div class="activeProduct debug_color">
+            <!--<h2 class="activeImageTitle" id="activeImageTitle">
+              Imagen Principal
+            </h2> -->
+            <div class="activeProductImageContainer">
+              <div class="activeProductImage_container">
+                <img
+                  src=""
+                  alt=""
+                  class="activeProductImage"
+                  id="activeProductImage"
+                />
+              </div>
+              <div class="activeProduct_gallery" id="activeProduct_gallery">
+                <h2 class="activeProductGallery_title">
+                  Imagenes del Producto Activo
                 </h2>
               </div>
-              <figure class="product_picture">
-                <img
-                  src="./images/bluewater-sweden-fNJW0d-LPZo-unsplash_ExpoSlider-Cocina.jpg"
-                  alt=""
-                  class="product_img"
-                />
-              </figure>
-              <div class="product_desc">
-                <p class="product_paragraph">
-                  <spam class="item_title">Cocina de lujo lineal</spam>,
-                  Elegancia y esistencia.
-                  <spam class="text_italic"
-                    >Bases resistentes a la humedad.
-                  </spam>
-                  Materiales de calidad garantizada..
-                </p>
+              <!--
+              <div class="activeProductSize_container" id="activeProductSize_container">
+              <div class="activeProductSize_title">
+                <h4>Tamaños title</h4>
               </div>
+              <div class="activeProductSize_gallery">
+                <div class="activeProductSize_galleryImages"></div>
+                <div class="activeProductSize_galleryImages"></div>
+                <div class="activeProductSize_galleryImages"></div>
+                <div class="activeProductSize_galleryImages"></div>
+                <div class="activeProductSize_galleryImages"></div>
+              </div>
+              </div>
+              -->
             </div>
-            <div class="product_characteristics">
-              <h3 class="subtitle">Especificaciones técnicas</h3>
-              <div class="products_chars_item">
-                <div class="item_group ">
-                  <span class="item_title">Medidas:</span>
-                  <p class="item_tab">
-                    <span class="item_title">Ancho:</span> 240 cm
-                  </p>
-                  <p class="item_tab">
-                    <span class="item_title">Alto:</span> Tope: 89 cm (Total:
-                    220 cm)
-                  </p>
-                  <p class="item_tab">
-                    <spam class="item_title">Profundidad: </spam>58 cm
-                  </p>
-                </div>
-                <div class="item_group ">
-                  <span class="item_title">Materiales del producto</span>
-                  <p class="item_tab">
-                    <spam class="item_title">Material:</spam> MDF 18mm
-                  </p>
-                  <p class="item_tab">
-                    <spam class="item_title">Acabado:</spam> Laminado decorativo
-                    (Formica)
-                  </p>
-                </div>
-              </div>
-              <div class="product_price">
-                <div class="bt_consulta">
-                  <a href="#contact" class="cta">Consultas</a>
-                </div>
-                <div>
-                  <p class="productPrice_title">
-                    Comprar: <spam class="productPrice_monto">$3.200,oo</spam>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="block_grid product_body" data-id="2">
-            <!-- slider items  block_grid-->
-            <div class="product_descrptions">
-              <!--expo Kitchen items -->
-              <div class="product_texts">
-                <h2 class="title">
-                  Closet<spam class="subtitle">, Básico</spam>
-                </h2>
+            <div class="activeProductTexts">
+              <div class="activeProductSpecs">
+                <span class="activeProducTitle" id="activeProductTitle"
+                  >Especificaciones del producto</span
+                >
+                <h2 class="activeProductName"></h2>
+                <p class="activeProductDescription"></p>
               </div>
-              <figure class="product_picture">
-                <img
-                  src="./images/pickawood-O3ZeDMslEJw-unsplash_ExpoSlider-CLosets.jpg"
-                  alt=""
-                  class="product_img"
-                />
-              </figure>
-              <div class="product_desc">
-                <p class="product_paragraph">
-                  <spam class="item_title">Closet Básico Cerrado</spam>,
-                  Capacidad para ropa y accesorios personales.
-                  <spam class="text_italic"
-                    >Bases resistentes a la humedad.
-                  </spam>
-                  puertas Laterales y superiores. Zona media abierta para
-                  accesorios y zapatos.
-                </p>
-              </div>
-            </div>
-            <div class="product_characteristics">
-              <h3 class="subtitle">Especificaciones técnicas</h3>
-              <div class="item_group">
-                <span class="item_title">Medidas:</span>
-                <p class="item_tab">
-                  <span class="item_title">Ancho:</span> 190 cm
-                </p>
-                <p class="item_tab">
-                  <span class="item_title">Alto:</span> 230 cm
-                </p>
-                <p class="item_tab">
-                  <spam class="item_title">Profundidad: </spam>60 cm
-                </p>
-              </div>
-              <div class="item_group">
-                <span class="item_title">Materiales del producto</span>
-                <p class="item_tab">
-                  <spam class="item_title">Material:</spam> MDF 18mm
-                </p>
-                <p class="item_tab">
-                  <spam class="item_title">Acabado:</spam> Laminado decorativo
-                  (Formica)
-                </p>
-              </div>
-              <!-- <div class="product_cta">
-                <div class="bt_consulta">
-                  <a href="#" class="cta">Consultas</a>
+              <div>
+                <div class="activeProduct_price">
+                  <div class="productPrice_container">
+                    <p class="productPrice"></p>
+                  </div>
+
+                  <div class="productBuy">
+                    <p>Comprar</p>
+                  </div>
                 </div>
-                <div class="bt_comprar">
-                  <a href="#" class="cta">Comprar</a>
-                </div>
+                <!--
+              <div class="activeProduct_reviews">
+                <p class="">Reseñas</p>
+                <p class="productReview_reseñastitle">4.8</p>
+                <p class="productReview_reseñastitle">****x</p>
+                <p class="productReview_reseñastitle">(120)</p>
               </div> -->
-              <div class="product_price">
-                <div class="bt_consulta">
-                  <a href="#" class="cta">Consultas</a>
-                </div>
-                <div>
-                  <p class="productPrice_title">
-                    Comprar: <spam class="productPrice_monto">$1900,oo</spam>
-                  </p>
-                </div>
               </div>
             </div>
           </div>
-
-          <div class="block_grid product_body" data-id="3">
-            <!-- slider items  block_grid-->
-            <div class="product_descrptions">
-              <!--expo Kitchen items -->
-              <div class="product_texts">
-                <h2 class="title">
-                  Juego de Comedor<spam class="subtitle">, TEPUY</spam>
-                </h2>
-              </div>
-              <figure class="product_picture">
-                <img
-                  src="./images/Juego_de_comedor.jpg"
-                  alt=""
-                  class="product_img"
-                />
-              </figure>
-              <div class="product_desc">
-                <p class="product_paragraph">
-                  <spam class="item_title">Juego de Comedor</spam>, modelo
-                  TEPUY, con capacidad de 8 sillas. Ultra moderno y acogedor.
-                  <spam class="text_italic"
-                    >Estilizada combinación Madera y Metales.
-                  </spam>
-                  Línea ergonómica adaptadas a mesas de acuerdo a
-                  especificaciones internacionales.
-                </p>
-              </div>
-            </div>
-            <div class="product_characteristics">
-              <h3 class="subtitle">Especificaciones técnicas</h3>
-              <div class="item_group">
-                <span class="item_title">Medidas:</span>
-                <p class="item_tab">
-                  <span class="item_title">Ancho:</span> 80 cm
-                </p>
-                <p class="item_tab">
-                  <span class="item_title">Alto:</span> 74 cm
-                </p>
-                <p class="item_tab">
-                  <spam class="item_title">Largo: </spam>210 cm
-                </p>
-              </div>
-              <div class="item_group">
-                <span class="item_title">Materiales del producto</span>
-                <p class="item_tab">
-                  <spam class="item_title">Material:</spam> Madera natural
-                  recubierta
-                </p>
-                <p class="item_tab">
-                  <spam class="item_title">Acabado:</spam> Laca Acrílica
-                  (Formica)
-                </p>
-              </div>
-              <!-- <div class="product_cta">
-                <div class="bt_consulta">
-                  <a href="#" class="cta">Consultas</a>
-                </div>
-                <div class="bt_comprar">
-                  <a href="#" class="cta">Comprar</a>
-                </div>
-              </div> -->
-              <div class="product_price">
-                <div class="bt_consulta">
-                  <a href="#" class="cta">Consultas</a>
-                </div>
-                <div>
-                  <p class="productPrice_title">
-                    Comprar: <spam class="productPrice_monto">$870,oo</spam>
-                  </p>
-                </div>
-              </div>
+          <div class="productGalleryByCategory">
+            <div
+              class="galleryProductsByCategory"
+              id="galleryProductsByCategory"
+            ></div>
+            <div class="productGalleryByCategory_messageContainer">
+              <span class="galleryProductsByCategory_message"
+                >Seleccione un producto</span
+              >
             </div>
           </div>
-
-          <div class="block_grid product_body" data-id="4">
-            <!-- slider items  block_grid-->
-            <div class="product_descrptions">
-              <!--expo Kitchen items -->
-              <div class="product_texts">
-                <h2 class="title">
-                  Centro de entretenimiento<spam class="subtitle"
-                    >, Escala</spam
-                  >
-                </h2>
-              </div>
-              <figure class="product_picture">
-                <img
-                  src="./images/Carpingero_ExpoSlider-CentroDeEntretinimiento.jpg"
-                  alt=""
-                  class="product_img"
-                />
-              </figure>
-              <div class="product_desc">
-                <p class="product_paragraph">
-                  <spam class="item_title">Diversión a máximo nivel</spam>,
-                  modelo Escala, solo verlo dará placer.
-                  <spam class="text_italic">TV, accesorios y amplitud. </spam>
-                  La combinación perfecta enre madera y laminados.
-                </p>
-              </div>
-            </div>
-            <div class="product_characteristics">
-              <h3 class="subtitle">Especificaciones técnicas</h3>
-              <div class="item_group">
-                <span class="item_title">Medidas:</span>
-                <p class="item_tab">
-                  <span class="item_title">Ancho:</span> 200 cm
-                </p>
-                <p class="item_tab">
-                  <span class="item_title">Alto:</span> 195 cm
-                </p>
-                <p class="item_tab">
-                  <spam class="item_title">profundidad: </spam>10 cm
-                </p>
-              </div>
-              <div class="item_group">
-                <span class="item_title">Materiales del producto</span>
-                <p class="item_tab">
-                  <spam class="item_title">Material:</spam> MDF 18mm & Wall
-                  Panel Madera
-                </p>
-                <p class="item_tab">
-                  <spam class="item_title">Acabado:</spam> Laminados decorativo
-                  Blanco y madera. (Formica)
-                </p>
-              </div>
-              <!-- <div class="product_cta">
-                <div class="bt_consulta">
-                  <a href="#" class="cta">Consultas</a>
-                </div>
-                <div class="bt_comprar">
-                  <a href="#" class="cta">Comprar</a>
-                </div>
-              </div> -->
-              <div class="product_price">
-                <div class="bt_consulta">
-                  <a href="#" class="cta">Consultas</a>
-                </div>
-                <div>
-                  <p class="productPrice_title">
-                    Comprar: <spam class="productPrice_monto">$1.490,oo</spam>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="block_grid product_body" data-id="5">
-            <div class="product_descrptions">
-              <div class="product_texts">
-                <h2 class="title">
-                  Mesas de noche <spam class="subtitle">, Morpheus</spam>
-                </h2>
-              </div>
-              <figure class="product_picture">
-                <img
-                  src="./images/Dormitorios_mesaDeNoche_Morpheus.jpg"
-                  alt=""
-                  class="product_img"
-                />
-              </figure>
-              <div class="product_desc">
-                <p class="product_paragraph">
-                  <spam class="item_title">Descripción:</spam>, 2 gavetas de
-                  14cm de alto.
-                  <spam class="text_italic"
-                    >MDF revestido en formica de alta calidad y resistencia .
-                  </spam>
-                  Gavetas con revestimiento interno de laminado alto brillo.
-                </p>
-              </div>
-              <!-- -->
-            </div>
-            <div class="product_characteristics">
-              <h3 class="subtitle">Especificaciones técnicas</h3>
-              <div class="item_group">
-                <span class="item_title">Medidas:</span>
-                <p class="item_tab">
-                  <span class="item_title">Ancho:</span> 45 cm
-                </p>
-                <p class="item_tab">
-                  <span class="item_title">Alto:</span> 45 cm
-                </p>
-                <p class="item_tab">
-                  <spam class="item_title">profundidad: </spam>40 cm
-                </p>
-              </div>
-              <div class="item_group">
-                <span class="item_title">Materiales del producto</span>
-                <p class="item_tab">
-                  <spam class="item_title">Material:</spam> MDF alta densidad
-                </p>
-                <p class="item_tab">
-                  <spam class="item_title">Acabado:</spam> Laminados decorativo.
-                  (Formica)
-                </p>
-              </div>
-              <!-- <div class="product_cta">
-                <div class="bt_consulta">
-                  <a href="#" class="cta">Consultas</a>
-                </div>
-                <div class="bt_comprar">
-                  <a href="#" class="cta">Comprar</a>
-                </div>
-              </div> -->
-              <div class="product_price">
-                <div class="bt_consulta">
-                  <a href="#" class="cta">Consultas</a>
-                </div>
-                <div>
-                  <p class="productPrice_title">
-                    Comprar: <spam class="productPrice_monto">$98,oo</spam>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="block_grid product_body" data-id="6">
-            <div class="product_descrptions">
-              <div class="product_texts">
-                <h2 class="title">
-                  Mueble de baño <spam class="subtitle">, Amanecer</spam>
-                </h2>
-              </div>
-              <figure class="product_picture">
-                <img
-                  src="./images/mueblesDeBaño_Pared_Lavamanos.jpg"
-                  alt=""
-                  class="product_img"
-                />
-              </figure>
-              <div class="product_desc">
-                <p class="product_paragraph">
-                  <spam class="item_title">Descripción:</spam>
-                  Mueble de pared.
-                  <spam class="text_italic"
-                    >Espejo y Estanteria con 4 zonas de almacenamiento.
-                  </spam>
-                  Materital sintético, cubierto de laminado decorativo.
-                </p>
-              </div>
-              <!-- -->
-            </div>
-            <div class="product_characteristics">
-              <h3 class="subtitle">Especificaciones técnicas</h3>
-              <div class="item_group">
-                <span class="item_title">Medidas:</span>
-                <p class="item_tab">
-                  <span class="item_title">Ancho:</span> 45 cm
-                </p>
-                <p class="item_tab">
-                  <span class="item_title">Alto:</span> 65 cm
-                </p>
-                <p class="item_tab">
-                  <spam class="item_title">profundidad: </spam>14 cm
-                </p>
-              </div>
-              <div class="item_group">
-                <span class="item_title">Materiales del producto</span>
-                <p class="item_tab">
-                  <spam class="item_title">Material:</spam> Material sintético
-                  resistente a la humedad
-                </p>
-                <p class="item_tab">
-                  <spam class="item_title">Acabado:</spam> Laminados decorativo.
-                  (Formica)
-                </p>
-              </div>
-              <!-- <div class="product_cta">
-                <div class="bt_consulta">
-                  <a href="#" class="cta">Consultas</a>
-                </div>
-                <div class="bt_comprar">
-                  <a href="#" class="cta">Comprar</a>
-                </div>
-              </div> -->
-              <div class="product_price">
-                <div class="bt_consulta">
-                  <a href="#" class="cta">Consultas</a>
-                </div>
-                <div>
-                  <p class="productPrice_title">
-                    Comprar: <spam class="productPrice_monto">$94,oo</spam>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="block_grid product_body" data-id="7">
-            <div class="product_descrptions">
-              <div class="product_texts">
-                <h2 class="title">
-                  Mesa de centro <spam class="subtitle">, Cross</spam>
-                </h2>
-              </div>
-              <figure class="product_picture">
-                <img
-                  src="./images/salaDeEstar_mesas_estar_01.jpg"
-                  alt=""
-                  class="product_img"
-                />
-              </figure>
-              <div class="product_desc">
-                <p class="product_paragraph">
-                  <spam class="item_title">Descripción:</spam>
-                  Mueble de centro.
-                  <spam class="text_italic">Doble piezas, doble nivel. </spam>
-                  Material comprimido, cubierto de laminado decorativo, 2 tonos.
-                </p>
-              </div>
-              <!-- -->
-            </div>
-            <div class="product_characteristics">
-              <h3 class="subtitle">Especificaciones técnicas</h3>
-              <div class="item_group">
-                <span class="item_title">Medidas:</span>
-                <p class="item_tab">
-                  <span class="item_title">Ancho:</span> 45 cm
-                </p>
-                <p class="item_tab">
-                  <span class="item_title">Alto:</span> 65 cm
-                </p>
-                <p class="item_tab">
-                  <spam class="item_title">profundidad: </spam>14 cm
-                </p>
-              </div>
-              <div class="item_group">
-                <span class="item_title">Materiales del producto</span>
-                <p class="item_tab">
-                  <spam class="item_title">Material:</spam> Material sintético
-                  resistente a la humedad
-                </p>
-                <p class="item_tab">
-                  <spam class="item_title">Acabado:</spam> Laminados decorativo.
-                  (Formica)
-                </p>
-              </div>
-              <!-- <div class="product_cta">
-                <div class="bt_consulta">
-                  <a href="#" class="cta">Consultas</a>
-                </div>
-                <div class="bt_comprar">
-                  <a href="#" class="cta">Comprar</a>
-                </div>
-              </div> -->
-              <div class="product_price">
-                <div class="bt_consulta">
-                  <a href="#" class="cta">Consultas</a>
-                </div>
-                <div>
-                  <p class="productPrice_title">
-                    Comprar: <spam class="productPrice_monto">$129,oo</spam>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="block_grid product_body" data-id="8">
-            <div class="product_descrptions">
-              <div class="product_texts">
-                <h2 class="title">
-                  Centro de lavado <spam class="subtitle">, Iceberg</spam>
-                </h2>
-              </div>
-              <figure class="product_picture">
-                <img
-                  src="./images/lavanderos_centroDeLavado_moduloCompleto_01.jpg"
-                  alt=""
-                  class="product_img"
-                />
-              </figure>
-              <div class="product_desc">
-                <p class="product_paragraph">
-                  <spam class="item_title">Descripción:</spam>
-                  Mueble de Lavandero.
-                  <spam class="text_italic"
-                    >Doble nivel. Almacenamiento superior alto con puertas
-                    verticales y cesta para ropa
-                  </spam>
-                  Material resistente a la humedad, cubierto de laminado
-                  decorativo.
-                </p>
-              </div>
-              <!-- -->
-            </div>
-            <div class="product_characteristics">
-              <h3 class="subtitle">Especificaciones técnicas</h3>
-              <div class="item_group">
-                <span class="item_title">Medidas:</span>
-                <p class="item_tab">
-                  <span class="item_title">Ancho:</span> 80 cm
-                </p>
-                <p class="item_tab">
-                  <span class="item_title">Alto:</span> 200 cm
-                </p>
-                <p class="item_tab">
-                  <spam class="item_title">profundidad: </spam>50 cm
-                </p>
-              </div>
-              <div class="item_group">
-                <span class="item_title">Materiales del producto</span>
-                <p class="item_tab">
-                  <spam class="item_title">Material:</spam> Material sintético
-                  resistente a la humedad
-                </p>
-                <p class="item_tab">
-                  <spam class="item_title">Acabado:</spam> Laminados decorativo.
-                  (Formica)
-                </p>
-              </div>
-              <!-- <div class="product_cta">
-                <div class="bt_consulta">
-                  <a href="#" class="cta">Consultas</a>
-                </div>
-                <div class="bt_comprar">
-                  <a href="#" class="cta">Comprar</a>
-                </div>
-              </div> -->
-              <div class="product_price">
-                <div class="bt_consulta">
-                  <a href="#" class="cta">Consultas</a>
-                </div>
-                <div>
-                  <p class="productPrice_title">
-                    Comprar: <spam class="productPrice_monto">$290,oo</spam>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <img
-            src="./images/arrow_right.svg"
-            alt="imagen_arrow_right"
-            class="scroll_arrow"
-            id="product_next"
-          />
         </div>
-<!--
-        <div class="scroll_nav">
-          <img
-            src="./images/arrow_left.svg"
-            alt="imgen_arrow_Left"
-            class="scroll_button"
-            id="before"
-          />
-          <img
-            src="./images/arrow_right.svg"
-            alt="imagen_arrow_right"
-            class="scroll_button"
-            id="next"
-          />
-        </div> -->
+        <div class="categoriesContainer" id="categoriesContainer">
+          <div class="galleryCategories" id="galleryCategories"></div>
+          <div class="categoriesTitle">
+            <h2>Categorias</h2>
+          </div>
+        </div>
       </section>
-      <!--^^^ Fin de Exposición de Productos -->
 
-      <!--
+      <!--     
       <section
         class="budget_block block_container block_container_clear"
         id="budget"
       >
         <h2 class="title">Budget</h2>
       </section>
-
-      <section
+    -->
+      <!--      <section
         class="customers_block block_container block_container_color"
         id="costumers"
       >
@@ -746,52 +243,54 @@
           </p>
         </div>
         <div id="contact_info" class="contact_info">
-          <article id="contactDatos" class="contact_info_datos">
+          <div id="contactDatos" class="contact_info_datos">
             <div class="item_title">
               <h2>ATENCIÓN AL CLIENTE</h2>
               <p>información de contacto</p>
             </div>
             <div class="products_chars_item">
-            <div class="flex_column item_group">
-              <div><h3 class="item_title">Atención inmediata</h3></div>
-              <div><span class="">WhatsApp</span></div>
-
-              <div>
+              <div class="flex_column item_group">
                 <div>
-                  <img src="./images/bxl-whatsapp.svg" alt="WhatsApp_icon" />
-                  <span> +58 412 828.8235 </span>
+                  <h3 class="item_title">Atención inmediata</h3>
                 </div>
-              </div>
-              <!--<div><span class="item_title">Correo electrónico</span></div>
+                <div><span class="">WhatsApp</span></div>
+
+                <div>
+                  <div>
+                    <img src="./images/bxl-whatsapp.svg" alt="WhatsApp_icon" />
+                    <span> +58 412 828.8295 </span>
+                  </div>
+                </div>
+                <!--<div><span class="item_title">Correo electrónico</span></div>
 
               <div>
                 <img src="./images/bx-envelope.svg" alt="email_icon" />
                 <span>karpinteros@gmail.com</span>
               </div>-->
-            </div>
-            <div class="flex_column item_group">
-              <div>
-                <h3>Siguenos en:</h3>
               </div>
-              <div><span class="item_title">Instagram</span></div>
+              <div class="flex_column item_group">
+                <div>
+                  <h3>Siguenos en:</h3>
+                </div>
+                <div><span class="item_title">Instagram</span></div>
 
-              <div>
-                <img src="./images/bxl-instagram.svg" alt="instagram_icon" />
-                <span>@karpinteros</span>
-              </div>
-              <div><span class="item_title">Facebook</span></div>
+                <div>
+                  <img src="./images/bxl-instagram.svg" alt="instagram_icon" />
+                  <span>@karpinteros</span>
+                </div>
+                <div><span class="item_title">Facebook</span></div>
 
-              <div>
-                <img
-                  src="./images/bxl-facebook-circle.svg"
-                  alt="facebook_icom"
-                />
-                <span>@karpinteros</span>
+                <div>
+                  <img
+                    src="./images/bxl-facebook-circle.svg"
+                    alt="facebook_icom"
+                  />
+                  <span>@karpinteros</span>
+                </div>
               </div>
             </div>
-            </div>
-          </article>
-          <article id="contactForm" class="contact_info_form">
+          </div>
+          <div id="contactForm" class="contact_info_form">
             <!-- modify this form HTML and place wherever you want your form -->
             <div id="contact_form_title">
               <h2 class="item_title">Atentos para asesorarle:</h2>
@@ -816,182 +315,13 @@
                 Enviar
               </button>
             </form>
-          </article>
+          </div>
         </div>
       </section>
 
       <!-- >>>>>>> BLOCK Blog  <<<<<<<< -->
       <!--
       <section class="block_blog" id="blog">
-        <div>
-          <h2 class="contact_block_title">Blog - Prueba de exposición de productos  en GRID</h2>
-          <p class="contact_block_desc">
-            Exposición y ventas de productos
-          </p>
-        </div>
-        <div class="matrix">
-          <article class="blogNews">
-            <h2>News</h2>
-          </article>
-          <article class="blogInnovation">
-            <h2>Innovación</h2>
-          </article>
-          <article class="blogTendencias">
-            <h2>Tendencias</h2>
-          </article>
-          <article class="blogTips">
-            <h2>Trucos</h2>
-          </article> 
-          
-          
-          <article class="matrix_cell_zoom">
-            <div class="cell_zoom_container">
-              <div class="">
-                <div class="product_texts">
-                  <h2 class="title">
-                    Centro de lavado <spam class="subtitle">, Iceberg</spam>
-                  </h2>
-                </div>
-                <figure class="product_picture">
-                  <img
-                    src="./images/lavanderos_centroDeLavado_moduloCompleto_01.jpg"
-                    alt=""
-                    class="product_img"
-                  />
-                </figure>
-                <div class="product_desc">
-                  <p class="product_paragraph">
-                    <spam class="item_title">Descripción:</spam>
-                    Mueble de Lavandero.
-                    <spam class="text_italic"
-                      >Doble nivel. Almacenamiento superior alto con puertas
-                      verticales y cesta para ropa
-                    </spam>
-                    Material resistente a la humedad, cubierto de laminado
-                    decorativo.
-                  </p>
-                </div>
-              </div>
-              <div class="">
-                <h3 class="subtitle">Especificaciones técnicas</h3>
-                <div class="item_group">
-                  <span class="item_title">Medidas:</span>
-                  <p class="item_tab">
-                    <span class="item_title">Ancho:</span> 80 cm
-                  </p>
-                  <p class="item_tab">
-                    <span class="item_title">Alto:</span> 200 cm
-                  </p>
-                  <p class="item_tab">
-                    <spam class="item_title">profundidad: </spam>50 cm
-                  </p>
-                </div>
-                <div class="item_group">
-                  <span class="item_title">Materiales del producto</span>
-                  <p class="item_tab">
-                    <spam class="item_title">Material:</spam> Material sintético
-                    resistente a la humedad
-                  </p>
-                  <p class="item_tab">
-                    <spam class="item_title">Acabado:</spam> Laminados
-                    decorativo. (Formica)
-                  </p>
-                </div>
-                <div class="product_price">
-                  <div class="bt_consulta">
-                    <a href="#" class="cta">Consultas</a>
-                  </div>
-                  <div>
-                    <p class="productPrice_title">
-                      Comprar: <spam class="productPrice_monto">$290,oo</spam>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-             <img
-              src="./images/Carpingero_ExpoSlider-CentroDeEntretinimiento.jpg"
-              alt="" class=""
-            /> 
-          </article>
-          <article class="matrix_item">
-            <img
-              src="./images/aaron-huber-G7sE2S4Lab4-unsplash.jpg"
-              alt=""
-              class="matrix_img"
-            />
-          </article>
-          <article class="matrix_item">
-            <img
-              src="./images/Carpingero_ExpoSlider-CentroDeEntretinimiento.jpg"
-              alt=""
-              class="matrix_img"
-            />
-          </article>
-          <article class="matrix_item">
-            <img
-              src="./images/Carpingero_ExpoSlider-CentroDeEntretinimiento.jpg"
-              alt=""
-              class="matrix_img"
-            />
-          </article>
-          <article class="matrix_item">
-            <img
-              src="./images/Carpingero_ExpoSlider-CentroDeEntretinimiento.jpg"
-              alt=""
-              class="matrix_img"
-            />
-          </article>
-          <article class="matrix_item">
-            <img
-              src="./images/Carpingero_ExpoSlider-CentroDeEntretinimiento.jpg"
-              alt=""
-              class="matrix_img"
-            />
-          </article>
-          <article class="matrix_item">
-            <img
-              src="./images/Carpingero_ExpoSlider-CentroDeEntretinimiento.jpg"
-              alt=""
-              class="matrix_img"
-            />
-          </article>
-          <article class="matrix_item">
-            <img
-              src="./images/Carpingero_ExpoSlider-CentroDeEntretinimiento.jpg"
-              alt=""
-              class="matrix_img"
-            />
-          </article>
-          <article class="matrix_item">
-            <img
-              src="./images/Carpingero_ExpoSlider-CentroDeEntretinimiento.jpg"
-              alt=""
-              class="matrix_img"
-            />
-          </article>
-          <article class="matrix_item">
-            <img
-              src="./images/Carpingero_ExpoSlider-CentroDeEntretinimiento.jpg"
-              alt=""
-              class="matrix_img"
-            />
-          </article>
-          <article class="matrix_item">
-            <img
-              src="./images/Carpingero_ExpoSlider-CentroDeEntretinimiento.jpg"
-              alt=""
-              class="matrix_img"
-            />
-          </article>
-          <article class="matrix_item">
-            <img
-              src="./images/Carpingero_ExpoSlider-CentroDeEntretinimiento.jpg"
-              alt=""
-              class="matrix_img"
-            />
-          </article>
-        </div>
       </section>
       -->
 
@@ -1010,13 +340,17 @@
     <footer class="footer" id="footer">
       <section class="footer_column">
         <div class="footer_empresa">
-          <div class="flex_row">
-            <div class="logo_box_light"><img src="" alt="" class="" /></div>
-            <div class="logo_box_dark"><img src="" alt="" class="" /></div>
-            <div class="logo_box_light"><img src="" alt="" class="" /></div>
-            <div class="logo_box_dark"><img src="" alt="" class="" /></div>
+          <div class="">
+            <div class="flex_row">
+              <div class="logo_box_light"><img src="" alt="" class="" /></div>
+              <div class="logo_box_dark"><img src="" alt="" class="" /></div>
+              <div class="logo_box_light"><img src="" alt="" class="" /></div>
+              <div class="logo_box_dark"><img src="" alt="" class="" /></div>
+            </div>
+            <div class=" ">
+              <h2 class="item_title">KARPINTEROS</h2>
+            </div>
           </div>
-          <h2 class="item_title">KARPINTEROS</h2>
           <div class="item_desc">
             <span>Profesionales que dan forma a sus espacios</span>
           </div>
@@ -1024,7 +358,7 @@
       </section>
 
       <section class="footer_column">
-        <nav class="nav block_grid">
+        <nav class="nav">
           <!-- nav_link container item_group-->
 
           <ul class="nav_link--footer">
@@ -1036,7 +370,7 @@
               <a href="#about" class="nav_links">Empresa</a>
             </li>
             <li class="nav_items">
-              <a href="#exposure_block" class="nav_links">Productos</a>
+              <a href="#shop" class="nav_links">Productos</a>
             </li>
             <!--            <li class="nav_items">
               <a href="#shop" class="nav_links">Shop</a>
@@ -1047,7 +381,7 @@
             <li class="nav_items">
               <a href="#costumers" class="nav_links">Clientes</a>
             </li>
--->
+          -->
             <li class="nav_items">
               <a href="#contact" class="nav_links">Contacto</a>
             </li>
@@ -1061,7 +395,7 @@
       </section>
 
       <section class="footer_column">
-        <div class="footer_contact block_grid">
+        <div class="footer_contact block_grid flex_center">
           <div class="item_title">Un placer atenderles al:</div>
           <div class="company_phone flex_row">
             <img
@@ -1083,7 +417,7 @@
       </section>
 
       <section class="footer_column">
-        <div class="footer_rrss block_grid">
+        <div class="footer_rrss block_grid flex_center">
           <div class="item_title">Síguenos en:</div>
           <div class="instagram flex_row">
             <img
@@ -1128,13 +462,14 @@
 
     <!-- JS LINKS -->
 
-    <script src="./JS/expoSlider.js"></script>
-    <!--    <script src="./JS/questions.js"></script>
-    
-    <script src="./JS/slider.js"></script>
-    <script src="./JS/menu.js"></script>
-  -->
-    <script src="./JS/slider.js"></script>
-    <script src="./JS/menu.js"></script>
+    <script src="./data/data.js"></script>
+    <!--     <script src="./js/shop.js"></script>
+    <script src="./js/expoSlider.js"></script>
+ -->
+    <script src="./js/menu.js"></script>
+    <script type="module">
+      import { showCategories } from "./js/shop.js";
+      showCategories();
+    </script>
   </body>
 </html>
